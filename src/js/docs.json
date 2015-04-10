@@ -1,7 +1,12 @@
 {
-  "Cats": [
-    { "name": "Tristan" },
-    { "name": "Ophelia" },
-    { "name": "Vitabsgwr" }
+  "Posts": [
+    {
+      "name": "Clearbit Integration",
+      "description": "Lead Scoring, Salesforce Integration with Internal and Third Party API's",
+      "type": 1,
+      "content": {
+
+      }
+    }
   ]
 }

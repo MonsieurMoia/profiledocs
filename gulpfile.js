@@ -9,7 +9,7 @@ var sass        = require('gulp-sass');
 var gulpif      = require('gulp-if');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
-
+var hbsfy       = require('browserify-handlebars');
 
 var sassPath  = "./src/sass/main.scss";
 var jsPath    = "./src/js/main";
@@ -33,8 +33,11 @@ gulp.task('express', function(){
 
 
 gulp.task('js', function(){
-  return browserify(jsPath,{debug: env === 'development'})
+  // return browserify(jsPath,{debug: env === 'development'})
+  return browserify(jsPath)
+
     .bundle()
+    .on('error', handleError)
     .pipe(source('index.js'))
     .on('error', handleError)
     // .pipe(gulpif(env === 'production', streamify(uglify())))
@@ -59,6 +62,7 @@ gulp.task('sass', function(){
     .pipe(sass(config))
     .on('error', handleError)
     .pipe(gulp.dest(outputDir + '/css'))
+    .on('error', handleError)
     .pipe(reload({stream: true}));
 });
 
