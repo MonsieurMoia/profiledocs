@@ -1,3 +1,28 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+
+//Fonts
+body{
+  font-family: 'Lato', sans-serif;
+  @include font-light;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @include font-bold;
+}
+
+//Links
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 body {
-  background-color: red;
+  color: $light;
+  height: 100%;
+  position: absolute;
+  @include gradient(top,$dark-purple,$purple)
 }

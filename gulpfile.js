@@ -1,18 +1,18 @@
-var browserify = require('browserify');
-var fs = require('fs');
-var express = require('express')
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var source = require('vinyl-source-stream');
-var streamify = require('gulp-streamify');
-var sass = require('gulp-sass');
-var gulpif = require('gulp-if');
+var browserify  = require('browserify');
+var fs          = require('fs');
+var express     = require('express');
+var gulp        = require('gulp');
+var uglify      = require('gulp-uglify');
+var source      = require('vinyl-source-stream');
+var streamify   = require('gulp-streamify');
+var sass        = require('gulp-sass');
+var gulpif      = require('gulp-if');
 var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var reload      = browserSync.reload;
 
 
-var sassPath = "./src/sass/main.scss";
-var jsPath = "./src/js/main";
+var sassPath  = "./src/sass/main.scss";
+var jsPath    = "./src/js/main";
 var outputDir = "./build";
 
 function handleError(err){
@@ -27,7 +27,7 @@ var env = process.env.NODE_ENV || 'development';
 
 gulp.task('express', function(){
   var app = express();
-  app.use(express.static(__dirname));
+  app.use(express.static('build'));
   app.listen(3000);
 });
 

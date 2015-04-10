@@ -1,0 +1,17 @@
+//Sass Mixins
+
+//Font-Weight
+@mixin font-light {  font-weight: 100;}
+@mixin font-normal {  font-weight: 300;}
+@mixin font-bold {  font-weight: 400;}
+@mixin font-bolder {  font-weight: 700;}
+
+//Gradients
+@mixin gradient ($origin: left, $start: $lightfff, $stop: #000000) {
+    background-color: $start;
+    background-image: -webkit-linear-gradient($origin, $start, $stop);
+    background-image: -moz-linear-gradient($origin, $start, $stop);
+    background-image: -o-linear-gradient($origin, $start, $stop);
+    background-image: -ms-linear-gradient($origin, $start, $stop);
+    background-image: linear-gradient($origin, $start, $stop);
+}
