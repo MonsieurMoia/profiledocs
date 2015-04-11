@@ -1,26 +1,2363 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-/* line 7, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
+/*!
+ * Bootstrap v3.3.4 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=736f0f3042af193e4ed4)
+ * Config saved to config.json and https://gist.github.com/736f0f3042af193e4ed4
+ */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+body {
+  margin: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+[hidden], template {
+  display: none; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a {
+  background-color: transparent; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+dfn {
+  font-style: italic; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+small {
+  font-size: 80%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+sup {
+  top: -0.5em; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+img {
+  border: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+pre {
+  overflow: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button {
+  overflow: visible; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button, select {
+  text-transform: none; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input {
+  line-height: normal; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+textarea {
+  overflow: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+td, th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg'); }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-asterisk:before {
+  content: "\2a"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-plus:before {
+  content: "\2b"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-euro:before, .glyphicon-eur:before {
+  content: "\20ac"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-minus:before {
+  content: "\2212"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cloud:before {
+  content: "\2601"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-envelope:before {
+  content: "\2709"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-pencil:before {
+  content: "\270f"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-glass:before {
+  content: "\e001"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-music:before {
+  content: "\e002"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-search:before {
+  content: "\e003"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-heart:before {
+  content: "\e005"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-star:before {
+  content: "\e006"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-star-empty:before {
+  content: "\e007"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-user:before {
+  content: "\e008"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-film:before {
+  content: "\e009"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-th-large:before {
+  content: "\e010"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-th:before {
+  content: "\e011"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-th-list:before {
+  content: "\e012"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ok:before {
+  content: "\e013"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-remove:before {
+  content: "\e014"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-zoom-in:before {
+  content: "\e015"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-zoom-out:before {
+  content: "\e016"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-off:before {
+  content: "\e017"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-signal:before {
+  content: "\e018"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cog:before {
+  content: "\e019"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-trash:before {
+  content: "\e020"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-home:before {
+  content: "\e021"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-file:before {
+  content: "\e022"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-time:before {
+  content: "\e023"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-road:before {
+  content: "\e024"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-download-alt:before {
+  content: "\e025"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-download:before {
+  content: "\e026"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-upload:before {
+  content: "\e027"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-inbox:before {
+  content: "\e028"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-play-circle:before {
+  content: "\e029"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-repeat:before {
+  content: "\e030"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-refresh:before {
+  content: "\e031"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-list-alt:before {
+  content: "\e032"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-lock:before {
+  content: "\e033"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-flag:before {
+  content: "\e034"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-headphones:before {
+  content: "\e035"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-volume-off:before {
+  content: "\e036"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-volume-down:before {
+  content: "\e037"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-volume-up:before {
+  content: "\e038"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-qrcode:before {
+  content: "\e039"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-barcode:before {
+  content: "\e040"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tag:before {
+  content: "\e041"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tags:before {
+  content: "\e042"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-book:before {
+  content: "\e043"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bookmark:before {
+  content: "\e044"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-print:before {
+  content: "\e045"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-camera:before {
+  content: "\e046"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-font:before {
+  content: "\e047"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bold:before {
+  content: "\e048"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-italic:before {
+  content: "\e049"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-text-height:before {
+  content: "\e050"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-text-width:before {
+  content: "\e051"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-align-left:before {
+  content: "\e052"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-align-center:before {
+  content: "\e053"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-align-right:before {
+  content: "\e054"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-align-justify:before {
+  content: "\e055"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-list:before {
+  content: "\e056"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-indent-left:before {
+  content: "\e057"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-indent-right:before {
+  content: "\e058"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-facetime-video:before {
+  content: "\e059"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-picture:before {
+  content: "\e060"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-map-marker:before {
+  content: "\e062"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-adjust:before {
+  content: "\e063"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tint:before {
+  content: "\e064"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-edit:before {
+  content: "\e065"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-share:before {
+  content: "\e066"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-check:before {
+  content: "\e067"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-move:before {
+  content: "\e068"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-step-backward:before {
+  content: "\e069"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-fast-backward:before {
+  content: "\e070"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-backward:before {
+  content: "\e071"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-play:before {
+  content: "\e072"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-pause:before {
+  content: "\e073"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-stop:before {
+  content: "\e074"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-forward:before {
+  content: "\e075"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-fast-forward:before {
+  content: "\e076"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-step-forward:before {
+  content: "\e077"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-eject:before {
+  content: "\e078"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-chevron-left:before {
+  content: "\e079"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-chevron-right:before {
+  content: "\e080"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-plus-sign:before {
+  content: "\e081"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-minus-sign:before {
+  content: "\e082"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-remove-sign:before {
+  content: "\e083"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ok-sign:before {
+  content: "\e084"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-question-sign:before {
+  content: "\e085"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-info-sign:before {
+  content: "\e086"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-screenshot:before {
+  content: "\e087"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-remove-circle:before {
+  content: "\e088"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ok-circle:before {
+  content: "\e089"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ban-circle:before {
+  content: "\e090"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-arrow-left:before {
+  content: "\e091"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-arrow-right:before {
+  content: "\e092"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-arrow-up:before {
+  content: "\e093"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-arrow-down:before {
+  content: "\e094"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-share-alt:before {
+  content: "\e095"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-resize-full:before {
+  content: "\e096"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-resize-small:before {
+  content: "\e097"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-exclamation-sign:before {
+  content: "\e101"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-gift:before {
+  content: "\e102"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-leaf:before {
+  content: "\e103"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-fire:before {
+  content: "\e104"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-eye-open:before {
+  content: "\e105"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-eye-close:before {
+  content: "\e106"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-warning-sign:before {
+  content: "\e107"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-plane:before {
+  content: "\e108"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-calendar:before {
+  content: "\e109"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-random:before {
+  content: "\e110"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-comment:before {
+  content: "\e111"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-magnet:before {
+  content: "\e112"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-chevron-up:before {
+  content: "\e113"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-chevron-down:before {
+  content: "\e114"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-retweet:before {
+  content: "\e115"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-shopping-cart:before {
+  content: "\e116"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-folder-close:before {
+  content: "\e117"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-folder-open:before {
+  content: "\e118"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-resize-vertical:before {
+  content: "\e119"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-resize-horizontal:before {
+  content: "\e120"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hdd:before {
+  content: "\e121"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bullhorn:before {
+  content: "\e122"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bell:before {
+  content: "\e123"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-certificate:before {
+  content: "\e124"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-thumbs-up:before {
+  content: "\e125"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-thumbs-down:before {
+  content: "\e126"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hand-right:before {
+  content: "\e127"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hand-left:before {
+  content: "\e128"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hand-up:before {
+  content: "\e129"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hand-down:before {
+  content: "\e130"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-circle-arrow-right:before {
+  content: "\e131"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-circle-arrow-left:before {
+  content: "\e132"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-circle-arrow-up:before {
+  content: "\e133"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-circle-arrow-down:before {
+  content: "\e134"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-globe:before {
+  content: "\e135"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-wrench:before {
+  content: "\e136"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tasks:before {
+  content: "\e137"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-filter:before {
+  content: "\e138"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-briefcase:before {
+  content: "\e139"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-fullscreen:before {
+  content: "\e140"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-dashboard:before {
+  content: "\e141"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-paperclip:before {
+  content: "\e142"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-heart-empty:before {
+  content: "\e143"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-link:before {
+  content: "\e144"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-phone:before {
+  content: "\e145"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-pushpin:before {
+  content: "\e146"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-usd:before {
+  content: "\e148"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-gbp:before {
+  content: "\e149"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort:before {
+  content: "\e150"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-order:before {
+  content: "\e153"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-attributes:before {
+  content: "\e155"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-unchecked:before {
+  content: "\e157"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-expand:before {
+  content: "\e158"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-collapse-down:before {
+  content: "\e159"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-collapse-up:before {
+  content: "\e160"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-log-in:before {
+  content: "\e161"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-flash:before {
+  content: "\e162"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-log-out:before {
+  content: "\e163"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-new-window:before {
+  content: "\e164"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-record:before {
+  content: "\e165"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-save:before {
+  content: "\e166"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-open:before {
+  content: "\e167"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-saved:before {
+  content: "\e168"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-import:before {
+  content: "\e169"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-export:before {
+  content: "\e170"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-send:before {
+  content: "\e171"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-floppy-disk:before {
+  content: "\e172"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-floppy-saved:before {
+  content: "\e173"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-floppy-remove:before {
+  content: "\e174"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-floppy-save:before {
+  content: "\e175"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-floppy-open:before {
+  content: "\e176"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-credit-card:before {
+  content: "\e177"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-transfer:before {
+  content: "\e178"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cutlery:before {
+  content: "\e179"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-header:before {
+  content: "\e180"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-compressed:before {
+  content: "\e181"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-earphone:before {
+  content: "\e182"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-phone-alt:before {
+  content: "\e183"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tower:before {
+  content: "\e184"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-stats:before {
+  content: "\e185"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sd-video:before {
+  content: "\e186"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hd-video:before {
+  content: "\e187"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-subtitles:before {
+  content: "\e188"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sound-stereo:before {
+  content: "\e189"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sound-dolby:before {
+  content: "\e190"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sound-5-1:before {
+  content: "\e191"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sound-6-1:before {
+  content: "\e192"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sound-7-1:before {
+  content: "\e193"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-copyright-mark:before {
+  content: "\e194"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-registration-mark:before {
+  content: "\e195"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cloud-download:before {
+  content: "\e197"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cloud-upload:before {
+  content: "\e198"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tree-conifer:before {
+  content: "\e199"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tree-deciduous:before {
+  content: "\e200"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-cd:before {
+  content: "\e201"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-save-file:before {
+  content: "\e202"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-open-file:before {
+  content: "\e203"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-level-up:before {
+  content: "\e204"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-copy:before {
+  content: "\e205"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-paste:before {
+  content: "\e206"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-alert:before {
+  content: "\e209"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-equalizer:before {
+  content: "\e210"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-king:before {
+  content: "\e211"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-queen:before {
+  content: "\e212"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-pawn:before {
+  content: "\e213"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bishop:before {
+  content: "\e214"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-knight:before {
+  content: "\e215"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-baby-formula:before {
+  content: "\e216"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-tent:before {
+  content: "\26fa"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-blackboard:before {
+  content: "\e218"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bed:before {
+  content: "\e219"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-apple:before {
+  content: "\f8ff"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-erase:before {
+  content: "\e221"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-hourglass:before {
+  content: "\231b"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-lamp:before {
+  content: "\e223"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-duplicate:before {
+  content: "\e224"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-piggy-bank:before {
+  content: "\e225"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-scissors:before {
+  content: "\e226"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-bitcoin:before {
+  content: "\e227"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-btc:before {
+  content: "\e227"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-xbt:before {
+  content: "\e227"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-yen:before {
+  content: "\00a5"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-jpy:before {
+  content: "\00a5"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ruble:before {
+  content: "\20bd"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-rub:before {
+  content: "\20bd"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-scale:before {
+  content: "\e230"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ice-lolly:before {
+  content: "\e231"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-education:before {
+  content: "\e233"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-option-horizontal:before {
+  content: "\e234"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-option-vertical:before {
+  content: "\e235"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-menu-hamburger:before {
+  content: "\e236"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-modal-window:before {
+  content: "\e237"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-oil:before {
+  content: "\e238"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-grain:before {
+  content: "\e239"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-sunglasses:before {
+  content: "\e240"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-text-size:before {
+  content: "\e241"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-text-color:before {
+  content: "\e242"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-text-background:before {
+  content: "\e243"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-top:before {
+  content: "\e244"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-bottom:before {
+  content: "\e245"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-horizontal:before {
+  content: "\e246"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-left:before {
+  content: "\e247"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-vertical:before {
+  content: "\e248"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-object-align-right:before {
+  content: "\e249"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-triangle-right:before {
+  content: "\e250"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-triangle-left:before {
+  content: "\e251"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-triangle-bottom:before {
+  content: "\e252"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-triangle-top:before {
+  content: "\e253"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-console:before {
+  content: "\e254"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-superscript:before {
+  content: "\e255"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-subscript:before {
+  content: "\e256"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-menu-left:before {
+  content: "\e257"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-menu-right:before {
+  content: "\e258"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-menu-down:before {
+  content: "\e259"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.glyphicon-menu-up:before {
+  content: "\e260"; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+figure {
+  margin: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+img {
+  vertical-align: middle; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.img-rounded {
+  border-radius: 6px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.img-circle {
+  border-radius: 50%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+[role="button"] {
+  cursor: pointer; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .container {
+    width: 1170px; } }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-12 {
+  width: 100%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-11 {
+  width: 91.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-10 {
+  width: 83.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-9 {
+  width: 75%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-8 {
+  width: 66.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-7 {
+  width: 58.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-6 {
+  width: 50%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-5 {
+  width: 41.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-4 {
+  width: 33.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-3 {
+  width: 25%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-2 {
+  width: 16.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-1 {
+  width: 8.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-12 {
+  right: 100%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-11 {
+  right: 91.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-10 {
+  right: 83.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-9 {
+  right: 75%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-8 {
+  right: 66.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-7 {
+  right: 58.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-6 {
+  right: 50%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-5 {
+  right: 41.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-4 {
+  right: 33.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-3 {
+  right: 25%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-2 {
+  right: 16.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-1 {
+  right: 8.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-pull-0 {
+  right: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-12 {
+  left: 100%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-11 {
+  left: 91.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-10 {
+  left: 83.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-9 {
+  left: 75%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-8 {
+  left: 66.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-7 {
+  left: 58.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-6 {
+  left: 50%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-5 {
+  left: 41.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-4 {
+  left: 33.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-3 {
+  left: 25%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-2 {
+  left: 16.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-1 {
+  left: 8.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-push-0 {
+  left: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66667%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333%; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.col-xs-offset-0 {
+  margin-left: 0; }
+
+@media (min-width: 768px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-12 {
+    width: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-11 {
+    width: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-10 {
+    width: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-9 {
+    width: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-8 {
+    width: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-7 {
+    width: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-6 {
+    width: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-5 {
+    width: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-4 {
+    width: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-3 {
+    width: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-2 {
+    width: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-1 {
+    width: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-12 {
+    right: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-11 {
+    right: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-10 {
+    right: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-9 {
+    right: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-8 {
+    right: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-7 {
+    right: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-6 {
+    right: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-5 {
+    right: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-4 {
+    right: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-3 {
+    right: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-2 {
+    right: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-1 {
+    right: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-pull-0 {
+    right: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-12 {
+    left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-11 {
+    left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-10 {
+    left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-9 {
+    left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-8 {
+    left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-7 {
+    left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-6 {
+    left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-5 {
+    left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-4 {
+    left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-3 {
+    left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-2 {
+    left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-1 {
+    left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-push-0 {
+    left: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-sm-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 992px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-12 {
+    width: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-11 {
+    width: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-10 {
+    width: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-9 {
+    width: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-8 {
+    width: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-7 {
+    width: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-6 {
+    width: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-5 {
+    width: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-4 {
+    width: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-3 {
+    width: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-2 {
+    width: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-1 {
+    width: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-12 {
+    right: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-11 {
+    right: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-10 {
+    right: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-9 {
+    right: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-8 {
+    right: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-7 {
+    right: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-6 {
+    right: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-5 {
+    right: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-4 {
+    right: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-3 {
+    right: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-2 {
+    right: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-1 {
+    right: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-pull-0 {
+    right: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-12 {
+    left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-11 {
+    left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-10 {
+    left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-9 {
+    left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-8 {
+    left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-7 {
+    left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-6 {
+    left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-5 {
+    left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-4 {
+    left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-3 {
+    left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-2 {
+    left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-1 {
+    left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-push-0 {
+    left: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-12 {
+    margin-left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-md-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 1200px) {
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-12 {
+    width: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-11 {
+    width: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-10 {
+    width: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-9 {
+    width: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-8 {
+    width: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-7 {
+    width: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-6 {
+    width: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-5 {
+    width: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-4 {
+    width: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-3 {
+    width: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-2 {
+    width: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-1 {
+    width: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-12 {
+    right: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-11 {
+    right: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-10 {
+    right: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-9 {
+    right: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-8 {
+    right: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-7 {
+    right: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-6 {
+    right: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-5 {
+    right: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-4 {
+    right: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-3 {
+    right: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-2 {
+    right: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-1 {
+    right: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-pull-0 {
+    right: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-12 {
+    left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-11 {
+    left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-10 {
+    left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-9 {
+    left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-8 {
+    left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-7 {
+    left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-6 {
+    left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-5 {
+    left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-4 {
+    left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-3 {
+    left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-2 {
+    left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-1 {
+    left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-push-0 {
+    left: auto; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+  .col-lg-offset-0 {
+    margin-left: 0; } }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group {
+  margin-bottom: 20px;
+  padding-left: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item {
+  color: #555; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item .list-group-item-heading {
+  color: #333; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item:hover, a.list-group-item:focus {
+  text-decoration: none;
+  color: #555;
+  background-color: #f5f5f5; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
+  background-color: #eee;
+  color: #777;
+  cursor: not-allowed; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text {
+  color: #777; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.active .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > .small {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+  color: #c7ddef; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-success {
+  color: #3c763d;
+  background-color: #dff0d8; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-success {
+  color: #3c763d; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-success .list-group-item-heading {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-success:hover, a.list-group-item-success:focus {
+  color: #3c763d;
+  background-color: #d0e9c6; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus {
+  color: #fff;
+  background-color: #3c763d;
+  border-color: #3c763d; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-info {
+  color: #31708f;
+  background-color: #d9edf7; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-info {
+  color: #31708f; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-info .list-group-item-heading {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-info:hover, a.list-group-item-info:focus {
+  color: #31708f;
+  background-color: #c4e3f3; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus {
+  color: #fff;
+  background-color: #31708f;
+  border-color: #31708f; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-warning {
+  color: #8a6d3b; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-warning .list-group-item-heading {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-warning:hover, a.list-group-item-warning:focus {
+  color: #8a6d3b;
+  background-color: #faf2cc; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
+  color: #fff;
+  background-color: #8a6d3b;
+  border-color: #8a6d3b; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-danger {
+  color: #a94442;
+  background-color: #f2dede; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-danger {
+  color: #a94442; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-danger .list-group-item-heading {
+  color: inherit; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-danger:hover, a.list-group-item-danger:focus {
+  color: #a94442;
+  background-color: #ebcccc; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
+  color: #fff;
+  background-color: #a94442;
+  border-color: #a94442; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+  content: " ";
+  display: table; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+  clear: both; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.pull-right {
+  float: right !important; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.pull-left {
+  float: left !important; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.hide {
+  display: none !important; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.show {
+  display: block !important; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.invisible {
+  visibility: hidden; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.hidden {
+  display: none !important; }
+
+/* line 10, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/bootstrap.scss */
+.affix {
+  position: fixed; }
+
+/* line 5, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/custom.scss */
+html {
+  height: 100%; }
+
+/* line 9, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/custom.scss */
+.item {
+  -webkit-box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.08); }
+
+/* line 8, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 100; }
+  font-weight: 300; }
 
-/* line 12, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
+/* line 13, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
-/* line 17, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
+/* line 18, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
 a {
   text-decoration: none;
   color: #fff; }
 
-/* line 23, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
+/* line 24, C:/Users/Roberto/Documents/MOYA/profiledocs/src/sass/main.scss */
 body {
   color: #fff;
   height: 100%;
-  position: absolute;
+  width: 100%;
   background-color: #0e0c15;
-  background-image: -webkit-linear-gradient(top, #0e0c15, #1d1b22);
-  background-image: -moz-linear-gradient(top, #0e0c15, #1d1b22);
-  background-image: -o-linear-gradient(top, #0e0c15, #1d1b22);
-  background-image: -ms-linear-gradient(top, #0e0c15, #1d1b22);
-  background-image: linear-gradient(top, #0e0c15, #1d1b22); }
+  background-image: -webkit-linear-gradient(top, #0e0c15, #27252e);
+  background-image: -moz-linear-gradient(top, #0e0c15, #27252e);
+  background-image: -o-linear-gradient(top, #0e0c15, #27252e);
+  background-image: -ms-linear-gradient(top, #0e0c15, #27252e);
+  background-image: linear-gradient(top, #0e0c15, #27252e);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }

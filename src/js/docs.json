@@ -5,7 +5,8 @@
       "description": "Lead Scoring, Salesforce Integration with Internal and Third Party API's",
       "type": 1,
       "content": {
-
+      	"text":"<p>Get a richer look into your customer base. Send us an email address and well return all of the associated social data we can find, including name,twitter and Facebook profiles, avatars, URLs, and more</p>",
+      	"images": ["../images/clearbit1.jpg"]
       }
     }
   ]

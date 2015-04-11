@@ -1,16 +1,15 @@
+// Libs
 var Handlebars = require('handlebars');
+
+// Controllers
+var postsCtrl = require('./controllers/posts-controller.js');
+
+//Data
 var data = require('./docs.json');
 
-var posttpl = require('../views/post-template.hbs');
-
-
 function init(){
-  // var template = document.getElementById("posttpl").innerHTML;
-  // var render = Handlebars.compile(template);
-  var container = document.getElementById("postsContainer");
-
-  container.innerHTML = posttpl(data);
-
+	//Get Posts Controller & Insert Data
+  	postsCtrl(data);
 }
 
 init();
