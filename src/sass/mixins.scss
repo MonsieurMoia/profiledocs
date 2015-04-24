@@ -32,3 +32,60 @@
 @mixin box-shadow-md(){
 	@include box-shadow(4px,0px,15px);
 }
+
+//Transforms
+//--Scale--
+
+@mixin scale($scale){
+    -webkit-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+@mixin rotate($angle){
+    -webkit-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+    -o-transform: rotate($angle);
+    transform: rotate($angle);
+}
+
+
+//Transitions
+
+@mixin transition($prop:all, $timing: .3s, $easing: ease-in-out){
+    -webkit-transition: $prop $timing $easing;
+    -o-transition: $prop $timing $easing;
+    transition: $prop $timing $easing;
+}
+
+@mixin transitionOutCubic (){
+    -webkit-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+
+-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+
+//Border Radius
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+@mixin bdrs-sm {
+    @include border-radius(3px);
+}
+
+@mixin bdrs-md {
+    @include border-radius(5px);
+}
+
+@mixin bdrs-lg {
+    @include border-radius(10px);
+}

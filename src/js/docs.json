@@ -3,11 +3,51 @@
     {
       "name": "Clearbit Integration",
       "description": "Lead Scoring, Salesforce Integration with Internal and Third Party API's",
-      "type": 1,
-      "content": {
+      "category": "Salesforce Appexchange Packages",
+      "coverUrl": "/images/clearbit-cover.jpg",
+      "extracontent": {
       	"text":"<p>Get a richer look into your customer base. Send us an email address and well return all of the associated social data we can find, including name,twitter and Facebook profiles, avatars, URLs, and more</p>",
-      	"images": ["../images/clearbit1.jpg"]
+      	"images": [
+          {"url": "/images/clearbit1.jpg"}
+        ]
+      }
+    },
+    {
+      "name": "Stop Telling Women to Smile",
+      "description": "HTML5 Widget and Standalone Apps for Fusion.net",
+      "category": "Data Driven Interactive Infographics",
+      "coverUrl": "/images/fusion-stoptelling-cover.jpg",
+      "extracontent": {
+        "text":"<p></p>",
+        "images": [
+          {"url": "/images/fusion-stoptelling-1.jpg"}
+        ]
       }
     }
+  ],
+  "Categories": [
+    {
+      "name": "Salesforce Appexchange Packages",
+      "projects": [
+        {
+          "title": "Clearbit Integration", 
+          "description": "Lead Scoring, Salesforce Integration with Internal and Third Party API's"
+        }
+      ]
+    },
+    {
+      "name": "Data Driven Interactive Infographics",
+      "projects": [
+        {
+          "title": "Stop Telling Women to Smile", 
+          "description": "HTML5 Widget and Standalone Apps for Fusion.net"
+        }
+      ]
+    },
+    {"name": "Web & Mobile StoryTelling"},
+    {"name": "Software Development Workflow Automation"},
+    {"name": "Enterprise Web & Mobile Application"},
+    {"name": "Salesforce Platform Architecture and Development"},
+    {"name": "Salesforce Integrations with Internal & Third Party API's"}
   ]
 }

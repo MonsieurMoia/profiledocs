@@ -1,8 +1,34 @@
 {{#Posts}}
-	<a href="{{name}}" class="item">
-		<h2>{{name}}</h2>
-		<h3>{{description}}</h3>
-		{{{content.text}}}
-	</a>
+	<article class="post" id="{{name}}">
+
+		<div class="post-content">
+			<div class="post-glow"></div>
+			<div class="category-icon">
+				<img src="/images/icon-data-driven-infographics.svg" alt="">
+			</div>
+			<h2 class="post-title text-center no-margin">{{name}}</h2>
+			<p class="post-subtitle text-center">{{description}}</p>
+
+			{{#if extracontent}}
+				<div class="extra-content">
+					<div class="overlay"></div>
+					<img src="{{extracontent.images.0.url}}" class="img-responsive">
+					{{{extracontent.text}}}
+				</div>
+			{{/if}}
+
+			<div class="arrow img-circle">
+				<img src="/images/arrow-right.svg" alt="">
+			</div>
+
+		</div>
 		
+		<div class="post-bg">
+			{{#if coverUrl}}
+				<div class="post-cover">
+					<img src="{{coverUrl}}" alt="{{name}}">
+				</div>
+			{{/if}}
+		</div>
+	</article>
 {{/Posts}}

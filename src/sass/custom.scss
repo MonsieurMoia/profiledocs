@@ -4,9 +4,42 @@
 
 html {
 	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 
-.item {
-	@include box-shadow-md();
-	background-color: rgba(255,255,255,.08);
+//Links
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  color: $light;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5em;
+  @include gradient(top,$dark-purple,$purple);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+
+  .body-cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;left: 0;
+    z-index: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
 }
