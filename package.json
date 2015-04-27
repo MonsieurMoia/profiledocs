@@ -40,5 +40,8 @@
     "transform": [
       "hbsfy"
     ]
+  },
+  "dependencies": {
+    "hbs": "^3.0.1"
   }
 }
