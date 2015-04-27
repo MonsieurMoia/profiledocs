@@ -1,5 +1,4 @@
 var browserify  = require('browserify');
-var fs          = require('fs');
 var express     = require('express');
 var gulp        = require('gulp');
 var uglify      = require('gulp-uglify');
@@ -9,7 +8,6 @@ var sass        = require('gulp-sass');
 var gulpif      = require('gulp-if');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
-var image       = require('gulp-image');
 
 var sassPath  = "./src/sass/main.scss";
 var jsPath    = "./src/js/main";
